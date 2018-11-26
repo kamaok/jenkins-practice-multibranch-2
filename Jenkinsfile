@@ -9,9 +9,7 @@ pipeline {
 
 		stage('Test') {
 			steps {
-			    sh '''echo "Testing..."
-				exit 1		
-			    '''
+			    sh 'echo Testing; exit 1'
 			}
 		}
 		stage('Deploy') {
